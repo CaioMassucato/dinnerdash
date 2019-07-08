@@ -1,0 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/dinnerdash_front/node_modules
+/dinnerdash_front/.pnp
+/dinnerdash_front/.pnp.js
+
+# testing
+/dinnerdash_front/coverage
+
+# production
+/dinnerdash_front/build
+
+# misc
+/dinnerdash_front/.DS_Store
+/dinnerdash_front/.env.local
+/dinnerdash_front/.env.development.local
+/dinnerdash_front/.env.test.local
+/dinnerdash_front/.env.production.local
+
+/dinnerdash_front/npm-debug.log*
+/dinnerdash_front/yarn-debug.log*
+/dinnerdash_front/yarn-error.log*
+
+
+# Ignore bundler config.
+/dinnerdash_back/.bundle
+
+# Ignore all logfiles and tempfiles.
+/dinnerdash_back/log/*
+/dinnerdash_back/tmp/*
+/dinnerdash_back/!/log/.keep
+/dinnerdash_back/!/tmp/.keep
+/dinnerdash_back/.idea/
+
+/dinnerdash_back/.byebug_history
+/dinnerdash_back/erd.pdf
+# Ignore master key for decrypting credentials and more.
+/dinnerdash_back/config/master.key

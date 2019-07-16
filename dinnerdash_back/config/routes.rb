@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  get 'meal/create', to: 'meal#create'
-  get 'meal/show' , to: 'meal#create'
-  get 'meal/index', to: 'meal#create'
-  get 'meal/update', to: 'meal#create'
-  get 'meal/destroy', to: 'meal#create'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+#Rotas para Meal  
+  post 'meal/create', to: 'meal#create'
+  get 'meal/show' , to: 'meal#show'
+  get 'meal/index', to: 'meal#index'
+  put 'meal/update', to: 'meal#update'
+  delete 'meal/destroy', to: 'meal#destroy'
+  
+#Rotas para Meal Categories  
   get '/meal_categories', to: 'meal_categories#index'
   get '/meal_categories/:id', to: 'meal_categories#show'
   post '/meal_categories', to: 'meal_categories#create'
@@ -17,4 +20,5 @@ Rails.application.routes.draw do
  post '/orders/create', to: 'orders#create'
  put '/orders/update/:id', to: 'orders#update'
  delete '/orders/destroy/:id', to: 'orders#destroy'
+
 end

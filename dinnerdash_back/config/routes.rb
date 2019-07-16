@@ -25,12 +25,12 @@ Rails.application.routes.draw do
 
   post "/users" => "users#create"
   post "/users/new" => "users#new"
-  post "/users/login" => "users#login"
-
+  
+  put "/users/login" => "users#login"
+  put "/users/logout" => "users#logout"
   put "/users" => "users#update"
 
   delete "/users" => "users#destroy"
-  delete "/users/logout" => "users#logout"
   delete "/users/:id" => "users#remove"
 
   #Rotas para Situations

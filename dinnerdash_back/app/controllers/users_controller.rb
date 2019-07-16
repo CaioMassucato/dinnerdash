@@ -88,8 +88,14 @@ class UsersController < ApplicationController
 
   # Logout method - DELETE
   def logout
-    user = User.find_by(token: params[:token])
+    user = User.find_by(token: params[:token].to_s)
     user.update_columns(token: nil)
+
+    if user.token == nil
+      render json: {msg: "logged out" }
+    else
+      render json: {error: "Something went wrong" }
+    end
   end
 
   # Private methods for setting parameters

@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
 #Rotas para Meal  
-  post 'meal/create', to: 'meal#create'
-  get 'meal/show' , to: 'meal#show'
   get 'meal/index', to: 'meal#index'
+  get 'meal/show' , to: 'meal#show'
+  post 'meal/create', to: 'meal#create'
   put 'meal/update', to: 'meal#update'
   delete 'meal/destroy', to: 'meal#destroy'
   

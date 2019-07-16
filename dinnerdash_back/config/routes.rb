@@ -32,4 +32,16 @@ Rails.application.routes.draw do
   delete "/users" => "users#destroy"
   delete "/users/logout" => "users#logout"
   delete "/users/:id" => "users#remove"
+
+  #Rotas para Situations
+  get "/situations" => "situations#index"
+  get "/situations/:id" => "situations#show"
+
+  post "/situations" => "situations#create"
+  post "/situations/new" => "situations#new"
+
+  put "/situations" => "situations#update"
+
+  delete "/situations" => "situations#destroy"
+  delete "/situations/:id" => "situations#remove"
 end

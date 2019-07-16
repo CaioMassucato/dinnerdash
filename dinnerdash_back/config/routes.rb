@@ -11,4 +11,10 @@ Rails.application.routes.draw do
   put '/meal_categories/:id', to: 'meal_categories#update'
   delete '/meal_categories/:id', to: 'meal_categories#destroy'
 
+#Rotas para Orders
+ get '/orders/index', to: 'orders#index'
+ get '/orders/show/:id', to: 'orders#show'
+ post '/orders/create', to: 'orders#create'
+ put '/orders/update/:id', to: 'orders#update'
+ delete '/orders/destroy/:id', to: 'orders#destroy'
 end

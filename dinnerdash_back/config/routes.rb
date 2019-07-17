@@ -31,4 +31,30 @@ Rails.application.routes.draw do
  put '/orders/update/:id', to: 'orders#update'
  delete '/orders/destroy/:id', to: 'orders#destroy'
 
+  #Rotas para Users
+  get "/users" => "users#index"
+  get "/users/:id" => "users#show"
+  get "/users/search/:q" => "users#search"
+
+  post "/users" => "users#create"
+  post "/users/new" => "users#new"
+  
+  put "/users/login" => "users#login"
+  put "/users/logout" => "users#logout"
+  put "/users" => "users#update"
+
+  delete "/users" => "users#destroy"
+  delete "/users/:id" => "users#remove"
+
+  #Rotas para Situations
+  get "/situations" => "situations#index"
+  get "/situations/:id" => "situations#show"
+
+  post "/situations" => "situations#create"
+  post "/situations/new" => "situations#new"
+
+  put "/situations" => "situations#update"
+
+  delete "/situations" => "situations#destroy"
+  delete "/situations/:id" => "situations#remove"
 end

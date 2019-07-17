@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
 
 #Rotas para Meal  
-  get 'meal/index', to: 'meal#index'
-  get 'meal/show' , to: 'meal#show'
-  post 'meal/create', to: 'meal#create'
-  put 'meal/update', to: 'meal#update'
-  delete 'meal/destroy', to: 'meal#destroy'
+  get '/meal', to: 'meal#index'
+  get '/meal/:id' , to: 'meal#show'
+  post '/meal', to: 'meal#create'
+  put '/meal/:id', to: 'meal#update'
+  delete '/meal/destroy/:id', to: 'meal#destroy'
   
 #Rotas para Meal Categories  
   get '/meal_categories', to: 'meal_categories#index'

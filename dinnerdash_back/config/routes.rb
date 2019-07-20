@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/meal/:id' , to: 'meal#show'
   post '/meal', to: 'meal#create'
   put '/meal/:id', to: 'meal#update'
-  delete '/meal/destroy/:id', to: 'meal#destroy'
+  delete '/meal/:id', to: 'meal#destroy'
   
 #Rotas para Meal Categories  
   get '/meal_categories', to: 'meal_categories#index'

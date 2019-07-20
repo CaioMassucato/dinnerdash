@@ -1,0 +1,39 @@
+.cart-flex1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 30%;
+  height: 8em;
+  padding-top: 1.6em;
+  margin-bottom: 0.3em;
+}
+
+.cart-img {
+  background-image: url("salad1.jpeg");
+  background-size: cover;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  width: 7em;
+  height: 6.3em;
+  margin-right: 0.6em;
+  border: 0px;
+  border-style: solid;
+  border-color: rgba(107, 107, 107, 0.486);
+}
+
+/* lembrar como é o selector especifico (do segundo ao quinto filho) */
+.cart-info p:nth-child(n + 2) {
+  margin-bottom: 0.1em;
+  font-size: 0.9em;
+  color: rgba(77, 76, 76, 0.61);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.cart-info :first-child {
+  font-size: 1.2em;
+  margin-bottom: 0.6em;
+  color: rgba(44, 44, 44, 0.699);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}

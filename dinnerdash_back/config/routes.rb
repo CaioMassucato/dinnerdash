@@ -6,10 +6,8 @@ Rails.application.routes.draw do
   get '/meal/:id' , to: 'meal#show'
   post '/meal', to: 'meal#create'
   put '/meal/:id', to: 'meal#update'
-  delete '/meal/destroy/:id', to: 'meal#destroy'
+  delete '/meal/:id', to: 'meal#destroy'
   
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #Rotas para OrderMeal
   get '/order_meals/index', to: 'order_meals#index'
   get '/order_meals/show/:id', to: 'order_meals#show'

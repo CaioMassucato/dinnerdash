@@ -1,4 +1,7 @@
 class Meal < ApplicationRecord
+    has_many :order_meal
+    belongs_to :meal_category
+
     validates :name, presence: true, length: {in: 2..45}
     validates :description, presence: true, length: {in: 2..45}
     validates :price, presence: true, numericality: {greater_than: 0}

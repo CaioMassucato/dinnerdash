@@ -6,10 +6,6 @@ export default class Home extends Component {
     return (
       <div>
         <Banner />
-        <div className="container">
-          <h1 className="vermelho">Home</h1>
-          <button className="btn btn-success">ola</button>
-        </div>
       </div>
     );
   }

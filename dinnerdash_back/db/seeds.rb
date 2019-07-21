@@ -12,3 +12,5 @@ MealCategory.create(name:'Molhos')
 MealCategory.create(name:'Saladas')
 MealCategory.create(name:'Guarnição')
 MealCategory.create(name:'Sobremesas')
+
+Meal.create(name:'')

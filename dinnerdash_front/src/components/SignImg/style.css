@@ -1,0 +1,7 @@
+.fundo {
+  background-image: url("../../assets/sabri-tuzcu.jpg");
+  background-size: cover;
+  width: 60vw;
+  height: 100vh;
+  margin: 0%;
+}

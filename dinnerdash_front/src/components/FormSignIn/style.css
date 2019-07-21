@@ -1,0 +1,42 @@
+.login-container {
+  width: 38vw;
+  font-size: 1rem;
+  padding: 5rem 5rem 0rem;
+}
+
+.menu {
+  color: rgb(94, 88, 88);
+  font-family: "Amaranth", sans-serif;
+}
+
+form {
+  width: 30vw;
+  height: 70vh;
+  font-size: 0.8em;
+  color: rgb(105, 102, 102);
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+form a:first-child {
+  color: white;
+}
+
+.form-group2 {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.linha {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.btn {
+  font-size: 0.8rem !important;
+}

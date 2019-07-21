@@ -1,0 +1,18 @@
+.cart {
+  margin-top: 1.5em;
+  padding-left: 7rem;
+  width: 100%;
+}
+
+.cart span {
+  font-size: 1.7em;
+  color: rgba(44, 44, 44, 0.781);
+  font-family: "Roboto", serif;
+  margin-bottom: 0.5em;
+}
+
+.cart :nth-child(3) {
+  color: rgba(104, 104, 104, 0.678);
+  font-size: 1em;
+  padding-top: 0.5em;
+}

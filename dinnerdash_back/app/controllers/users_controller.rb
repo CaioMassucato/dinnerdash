@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
     before_action :set_user, only: %i[show update remove]
-    before_action :valid_token!, only: [:search]
+    before_action :valid_token!, only: [:search :update]
 
   # GET
   # Shows all users
@@ -44,8 +44,9 @@ class UsersController < ApplicationController
   # PUT/PATCH
   # updates an existing user
   def update
-    if @user.update(user_params)
-      render json: @user
+    user = User.find_by(token: params[:token].to_s)
+    if user.update(user_params)
+      render json: user
     else
       render json: { erro: "Couldn't update User" }
     end
@@ -73,7 +74,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # Login method - POST
+  # Login method - PUT
   def login
     user = User.find_by(email: params[:email].to_s.downcase)
 
@@ -86,7 +87,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # Logout method - DELETE
+  # Logout method - PUT
   def logout
     user = User.find_by(token: params[:token].to_s)
     user.update_columns(token: nil)

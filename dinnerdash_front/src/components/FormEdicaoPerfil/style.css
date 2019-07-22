@@ -1,0 +1,19 @@
+body {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 5vh;
+ }
+ 
+ 
+ .col{
+    padding-right: 500px;
+ }
+ 
+ label{
+    font-size: 0.9rem;
+    color: gray;
+ }
+ 
+ button{
+    width: 45vh;
+ }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import BannerBackoffice from "../../components/BannerBackoffice"
+import NavBar from "../../components/NavBar";
 import Cardrefeicoes from "../../components/Cardrefeicoes"
 
 export default class CriacaoRefeicao extends Component {
@@ -8,6 +9,7 @@ export default class CriacaoRefeicao extends Component {
       return (
           <div>
               <BannerBackoffice/>
+              <NavBar/>
               <Cardrefeicoes/>
           </div>
       );

@@ -6,7 +6,7 @@ export default class CategoriaRefeicoes extends Component {
         return(
             <footer>
                 <p><strong>dinner</strong>dash | todos os direitos reservados</p>
-                <p>desenvolvido pelo grupo 1 dos trainees</p>
+                <p>desenvolvido pelo grupo1 dos trainees de 2019/1</p>
             </footer>
         );
     }

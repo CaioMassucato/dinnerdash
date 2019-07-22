@@ -14,3 +14,10 @@ export const login = (email, password) => {
 export const signup = (name, email, password) => {
   return api.post("/users", { name, email, password });
 };
+
+
+export const createmeal = (nome, categoria, descricao, preco) => {
+  return api.post('/meal', { name:nome, price:preco, description:descricao });
+};
+
+

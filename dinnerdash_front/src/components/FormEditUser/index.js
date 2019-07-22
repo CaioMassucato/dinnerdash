@@ -21,7 +21,7 @@ export default class FormEditUser extends Component {
   };
 
   updateAdmin() {
-    if (this.state.profile == "Administrador") {
+    if (this.state.profile === "Administrador") {
       this.setState({ admin: true });
     }
   }

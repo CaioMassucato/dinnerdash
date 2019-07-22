@@ -6,7 +6,7 @@ import BackLast from "./pages/BackLast";
 import SignIn from "./pages/SignIn";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
-
+import EditarStatus from "./pages/EditarStatus"
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/signin" component={SignIn} />
         <Route path="/" exact component={Home} />
+        <Route path="/editarstatus" exact component={EditarStatus} />
       </Switch>
     </Router>
   );
